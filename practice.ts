@@ -204,13 +204,15 @@ interface Bagoni {product:string, price:number}
 interface Card extends Bagoni {card:boolean}
 let 장바구니: Bagoni[] = [ { product : '청소기', price : 7000 }, { product : '삼다수', price : 800 } ] 
 
-
-interface 숫자 {}
-let 오브 = {
-  plus(){
-    return
+interface Obje {
+  plus: (a:number, b:number)=>number,
+  minus: (a:number, b:number)=>number
+}
+let 오브젝트3:Obje ={
+  plus(a,b){
+    return a+b
   },
-  minus(){
-    return
+  minus(a,b){
+    return a-b
   }
 }
